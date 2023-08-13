@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- other meta tags and stylesheets -->
+    <style>
+        /* Ensure the html and body take up the full viewport height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Set the particles-js container to take up the full width and height of its parent (body) */
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0 /* Prevents the particles from covering the text */;
+        }
+
+        #profile-image {
+            position: relative;
+            width: 150px;  /* adjust as needed */
+            height: 150px;  /* adjust as needed */
+            background-image: url('/assets/images/adrian.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+            opacity: 0.8;
+            top: auto;
+            left: auto;
+            /*right: auto; /* Reset the right property */
+            border-radius: 50%;
+            opacity: 1;
+            margin-right: 100px; /* Add some space between the image and the text */
+        }
+
+        /* Styles for the About Me section */
+        #about-me {
+            margin-left: 0.5em;
+            margin-right: auto;
+            max-width: 60em; /* Ensure it doesn't stretch too wide */
+            z-index: 2;
+            color: white;
+            font-size: 18px; /* Make the text slightly larger for readability */
+        }
+
+        #projects {
+            margin-left: 0.5em;
+            margin-right: auto;
+            margin-top: 1em;
+            max-width: 60em; /* Ensure it doesn't stretch too wide */
+            z-index: 2;
+            color: white;
+            font-size: 18px; /* Make the text slightly larger for readability */
+        }
+
+        #about-me h3 {
+            margin-top: 0;
+            color: rgb(235, 208, 54); /* Gold color for the heading */
+        }
+
+        #about-me a {
+            display: inline-block;
+            color: #00f;
+            margin-right: 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #00f;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #about-me a:hover {
+            background-color: #00f;
+            color: white;
+        }
+        #centered-container {
+            position: relative;
+            margin: 5% auto;  /* 5% margin top and bottom for vertical spacing, auto for horizontal centering */
+            width: 70%;  /* adjust as needed, this means it will take 90% of the viewport width */
+            overflow: hidden;  /* to make sure no child elements spill out of the container */
+            z-index: 2;
+        }
+        .background-container {
+            padding: 15px; /* Give some space around the text */
+            background-color: rgba(214, 155, 155, 0.7); /* Semi-transparent black */
+            border-radius: 10px; /* Rounded corners for a modern look */
+        }
+        #Title {
+            position: relative;
+            left: auto; /* Space from the profile image */
+            top: auto;
+            max-width: 15em; /* Ensure it doesn't stretch too wide */
+            z-index: 2;
+            margin-left: 0.5em;
+            margin-right: auto;
+            color: white;
+            font-size: 48px; /* Make the text slightly larger for readability */
+            font-family: 'REM', sans-serif;
+        }
+        #profile-title-container {
+            display: flex;     /* use flexbox */
+            align-items: center; /* center the items vertically */
+            margin-bottom: 20px; /* Add some space between this container and the About Me section */
+        }
+        p {
+            font-family: 'Roboto Slab', serif;
+            
+        }
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <!-- HTML content -->
+    <div id="centered-container">
+        <!-- Profile and Title container -->
+        <div id="profile-title-container">
+            <div id="profile-image"></div>
+            <span id="Title"></span>
+        </div>
+        
+        <!-- About Me section -->
+        <div id="about-me">
+            <div class="background-container">
+                <p>
+                    🚀 Crafting Digital Artistry: Delving deep into the world of software, I've immersed myself in diverse languages, from the elegance of JavaScript and Node.js to the precision of Python. Occasionally, I explore the rich intricacies of C++ and the vibrant landscapes of Swift/SwiftUI.
+                </p>
+                <p>
+                    🎿 Nature's Retreat: When the digital world becomes overwhelming, I seek solace on the snowy ski slopes and the vast green expanses of the golf course. It's in these moments, amidst nature's splendor, that I find clarity and renewed vigor.
+                </p>
+                <p>
+                    💹 Decoding the Financial Matrix: In the labyrinth of stocks and cryptocurrencies, I find a thrilling game of patterns and predictions. It's not just about riding the waves but understanding the tides, ensuring every investment move is calculated and insightful.
+                </p>
+                <p>
+                    🧠 Innovation with Purpose: My ventures into deep learning have been nothing short of exhilarating. Harnessing the power of tools like PyTorch and TensorFlow, I've birthed innovations like a chat system powered by the vastness of Twitter and an AI sentinel detecting deforestation on our planet.
+                </p>
+                <p>
+                    🌍 Tech for Good: At the heart of all my endeavors lies a profound desire to make a difference. Whether it's through code, financial strategies, or AI innovations, I strive to weave a tapestry of positive change, aiming for a brighter and more harmonious world.
+                </p>
+                <p>
+                    (P.S. I put this together in a few hours, so it's not perfect. I'll be adding more content soon!)
+                </p>
+                <p>
+                    Connect with me: 
+                    <a href="https://www.linkedin.com/in/adriankrywiak/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Adrian-Krywiak" target="_blank">GitHub</a>
+                    <!-- Add more links as needed -->
+                </p>
+                <p>
+                    Want to view the source code? Check it out on GitHub: 
+                    <a href="https://github.com/Adrian-Krywiak/Adrian.Krywiak.com" target="_blank">Source Code</a>
+                    <!-- Add more links as needed -->
+                </p>
+                <!--<h2>See some projects I've worked on:</h2> -->
+            </div>
+        </div>
+        <!--<div id="projects">
+            <div class="background-container">
+                <p>sadasdasd</p>
+                <p>sadasdasd</p>
+                <p>sadasdasd</p>
+                <p>sadasdasd</p>
+                <p>sadasdasd</p>
+                
+            </div>
+        </div>-->
+    </div>    
+    <div id="particles-js"></div>
+    <!-- Include particles.js -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="/particles/particles.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        particlesJS.load('particles-js', '/assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+        var typed = new Typed('#Title', {
+          strings: ["Hello, World! 🌍 Welcome to Adrian's Online Space!"],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
